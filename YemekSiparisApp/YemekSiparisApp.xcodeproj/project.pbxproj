@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA61347127F70BF900BD7420 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA61347027F70BF900BD7420 /* GoogleService-Info.plist */; };
+		FA61347427F710EB00BD7420 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA61347327F710EB00BD7420 /* FirebaseAuth */; };
+		FA61347627F710EB00BD7420 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA61347527F710EB00BD7420 /* FirebaseFirestore */; };
+		FA61347827F710EB00BD7420 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA61347727F710EB00BD7420 /* FirebaseStorage */; };
+		FA61347C27F719E600BD7420 /* AuthenticationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA61347B27F719E600BD7420 /* AuthenticationVC.swift */; };
+		FA7B4D1027F346490006F168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B4D0F27F346490006F168 /* AppDelegate.swift */; };
+		FA7B4D1227F346490006F168 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B4D1127F346490006F168 /* SceneDelegate.swift */; };
+		FA7B4D1727F346490006F168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7B4D1527F346490006F168 /* Main.storyboard */; };
+		FA7B4D1927F3464B0006F168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7B4D1827F3464B0006F168 /* Assets.xcassets */; };
+		FA7B4D1C27F3464B0006F168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7B4D1A27F3464B0006F168 /* LaunchScreen.storyboard */; };
+		FA7B4D2727F3464C0006F168 /* YemekSiparisAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B4D2627F3464C0006F168 /* YemekSiparisAppTests.swift */; };
+		FA7B4D3127F3464C0006F168 /* YemekSiparisAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B4D3027F3464C0006F168 /* YemekSiparisAppUITests.swift */; };
+		FA7B4D3327F3464C0006F168 /* YemekSiparisAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B4D3227F3464C0006F168 /* YemekSiparisAppUITestsLaunchTests.swift */; };
+		FA8AD09D27F46B6B0004C13A /* FoodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD09C27F46B6B0004C13A /* FoodsVC.swift */; };
+		FA8AD09F27F46B830004C13A /* BasketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD09E27F46B830004C13A /* BasketVC.swift */; };
+		FA8AD0A127F46B9B0004C13A /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0A027F46B9B0004C13A /* DetailsVC.swift */; };
+		FA8AD0A327F46C660004C13A /* FoodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0A227F46C660004C13A /* FoodsTableViewCell.swift */; };
+		FA8AD0A527F46C7A0004C13A /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0A427F46C7A0004C13A /* BasketTableViewCell.swift */; };
+		FA8AD0A727F4798F0004C13A /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0A627F4798F0004C13A /* Yemekler.swift */; };
+		FA8AD0AA27F47AD10004C13A /* YemeklerCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0A927F47AD10004C13A /* YemeklerCevap.swift */; };
+		FA8AD0C227F481FA0004C13A /* FoodsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0C127F481FA0004C13A /* FoodsListProtocols.swift */; };
+		FA8AD0C427F485000004C13A /* FoodsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0C327F485000004C13A /* FoodsListInteractor.swift */; };
+		FA8AD0C627F4860B0004C13A /* FoodsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0C527F4860B0004C13A /* FoodsListPresenter.swift */; };
+		FA8AD0C827F4866F0004C13A /* FoodsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AD0C727F4866F0004C13A /* FoodsListRouter.swift */; };
+		FA8AD0CB27F490A80004C13A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA8AD0CA27F490A80004C13A /* Alamofire */; };
+		FA8AD0CE27F49A860004C13A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA8AD0CD27F49A860004C13A /* Kingfisher */; };
+		FA92538027F5CF19002CA92B /* DetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92537F27F5CF19002CA92B /* DetailsProtocols.swift */; };
+		FA92538427F60D4D002CA92B /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92538327F60D4D002CA92B /* DetailsInteractor.swift */; };
+		FA92538627F60D5A002CA92B /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92538527F60D5A002CA92B /* DetailsPresenter.swift */; };
+		FA92538827F60D6B002CA92B /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92538727F60D6B002CA92B /* DetailsRouter.swift */; };
+		FA92538B27F63C16002CA92B /* BasketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92538A27F63C16002CA92B /* BasketProtocols.swift */; };
+		FA92539327F63DE7002CA92B /* SepetYemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92539227F63DE7002CA92B /* SepetYemekler.swift */; };
+		FA92539527F6454F002CA92B /* SepetYemeklerCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92539427F6454F002CA92B /* SepetYemeklerCevap.swift */; };
+		FA92539727F64637002CA92B /* BasketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92539627F64637002CA92B /* BasketInteractor.swift */; };
+		FA92539927F6470C002CA92B /* BasketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92539827F6470C002CA92B /* BasketPresenter.swift */; };
+		FA92539B27F6480A002CA92B /* BasketRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92539A27F6480A002CA92B /* BasketRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA7B4D2327F3464C0006F168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7B4D0427F346480006F168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7B4D0B27F346480006F168;
+			remoteInfo = YemekSiparisApp;
+		};
+		FA7B4D2D27F3464C0006F168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA7B4D0427F346480006F168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA7B4D0B27F346480006F168;
+			remoteInfo = YemekSiparisApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA61347027F70BF900BD7420 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA61347B27F719E600BD7420 /* AuthenticationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVC.swift; sourceTree = "<group>"; };
+		FA7B4D0C27F346490006F168 /* YemekSiparisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YemekSiparisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7B4D0F27F346490006F168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA7B4D1127F346490006F168 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA7B4D1627F346490006F168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA7B4D1827F3464B0006F168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA7B4D1B27F3464B0006F168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA7B4D1D27F3464B0006F168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7B4D2227F3464C0006F168 /* YemekSiparisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YemekSiparisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7B4D2627F3464C0006F168 /* YemekSiparisAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekSiparisAppTests.swift; sourceTree = "<group>"; };
+		FA7B4D2C27F3464C0006F168 /* YemekSiparisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YemekSiparisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA7B4D3027F3464C0006F168 /* YemekSiparisAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekSiparisAppUITests.swift; sourceTree = "<group>"; };
+		FA7B4D3227F3464C0006F168 /* YemekSiparisAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekSiparisAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA8AD09C27F46B6B0004C13A /* FoodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsVC.swift; sourceTree = "<group>"; };
+		FA8AD09E27F46B830004C13A /* BasketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketVC.swift; sourceTree = "<group>"; };
+		FA8AD0A027F46B9B0004C13A /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		FA8AD0A227F46C660004C13A /* FoodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsTableViewCell.swift; sourceTree = "<group>"; };
+		FA8AD0A427F46C7A0004C13A /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		FA8AD0A627F4798F0004C13A /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
+		FA8AD0A927F47AD10004C13A /* YemeklerCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemeklerCevap.swift; sourceTree = "<group>"; };
+		FA8AD0C127F481FA0004C13A /* FoodsListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsListProtocols.swift; sourceTree = "<group>"; };
+		FA8AD0C327F485000004C13A /* FoodsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsListInteractor.swift; sourceTree = "<group>"; };
+		FA8AD0C527F4860B0004C13A /* FoodsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsListPresenter.swift; sourceTree = "<group>"; };
+		FA8AD0C727F4866F0004C13A /* FoodsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsListRouter.swift; sourceTree = "<group>"; };
+		FA92537F27F5CF19002CA92B /* DetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsProtocols.swift; sourceTree = "<group>"; };
+		FA92538327F60D4D002CA92B /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		FA92538527F60D5A002CA92B /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		FA92538727F60D6B002CA92B /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		FA92538A27F63C16002CA92B /* BasketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketProtocols.swift; sourceTree = "<group>"; };
+		FA92539227F63DE7002CA92B /* SepetYemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetYemekler.swift; sourceTree = "<group>"; };
+		FA92539427F6454F002CA92B /* SepetYemeklerCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetYemeklerCevap.swift; sourceTree = "<group>"; };
+		FA92539627F64637002CA92B /* BasketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketInteractor.swift; sourceTree = "<group>"; };
+		FA92539827F6470C002CA92B /* BasketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPresenter.swift; sourceTree = "<group>"; };
+		FA92539A27F6480A002CA92B /* BasketRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA7B4D0927F346480006F168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8AD0CE27F49A860004C13A /* Kingfisher in Frameworks */,
+				FA61347627F710EB00BD7420 /* FirebaseFirestore in Frameworks */,
+				FA61347427F710EB00BD7420 /* FirebaseAuth in Frameworks */,
+				FA61347827F710EB00BD7420 /* FirebaseStorage in Frameworks */,
+				FA8AD0CB27F490A80004C13A /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7B4D1F27F3464C0006F168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7B4D2927F3464C0006F168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA61347D27F71A6A00BD7420 /* authentication-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA61348227F71AC800BD7420 /* view */,
+			);
+			path = "authentication-module";
+			sourceTree = "<group>";
+		};
+		FA61348227F71AC800BD7420 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA61347B27F719E600BD7420 /* AuthenticationVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FA7B4D0327F346480006F168 = {
+			isa = PBXGroup;
+			children = (
+				FA7B4D0E27F346490006F168 /* YemekSiparisApp */,
+				FA7B4D2527F3464C0006F168 /* YemekSiparisAppTests */,
+				FA7B4D2F27F3464C0006F168 /* YemekSiparisAppUITests */,
+				FA7B4D0D27F346490006F168 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA7B4D0D27F346490006F168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA7B4D0C27F346490006F168 /* YemekSiparisApp.app */,
+				FA7B4D2227F3464C0006F168 /* YemekSiparisAppTests.xctest */,
+				FA7B4D2C27F3464C0006F168 /* YemekSiparisAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA7B4D0E27F346490006F168 /* YemekSiparisApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA61347D27F71A6A00BD7420 /* authentication-module */,
+				FA8AD0AB27F47D400004C13A /* foodsList-module */,
+				FA8AD0B527F47F150004C13A /* details-module */,
+				FA8AD0B427F47EFF0004C13A /* basket-module */,
+				FA7B4D0F27F346490006F168 /* AppDelegate.swift */,
+				FA7B4D1127F346490006F168 /* SceneDelegate.swift */,
+				FA7B4D1527F346490006F168 /* Main.storyboard */,
+				FA7B4D1A27F3464B0006F168 /* LaunchScreen.storyboard */,
+				FA7B4D1827F3464B0006F168 /* Assets.xcassets */,
+				FA7B4D1D27F3464B0006F168 /* Info.plist */,
+				FA61347027F70BF900BD7420 /* GoogleService-Info.plist */,
+				FA92537F27F5CF19002CA92B /* DetailsProtocols.swift */,
+				FA8AD0A827F47AAF0004C13A /* entity */,
+			);
+			path = YemekSiparisApp;
+			sourceTree = "<group>";
+		};
+		FA7B4D2527F3464C0006F168 /* YemekSiparisAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7B4D2627F3464C0006F168 /* YemekSiparisAppTests.swift */,
+			);
+			path = YemekSiparisAppTests;
+			sourceTree = "<group>";
+		};
+		FA7B4D2F27F3464C0006F168 /* YemekSiparisAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA7B4D3027F3464C0006F168 /* YemekSiparisAppUITests.swift */,
+				FA7B4D3227F3464C0006F168 /* YemekSiparisAppUITestsLaunchTests.swift */,
+			);
+			path = YemekSiparisAppUITests;
+			sourceTree = "<group>";
+		};
+		FA8AD0A827F47AAF0004C13A /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0A627F4798F0004C13A /* Yemekler.swift */,
+				FA8AD0A927F47AD10004C13A /* YemeklerCevap.swift */,
+				FA92539227F63DE7002CA92B /* SepetYemekler.swift */,
+				FA92539427F6454F002CA92B /* SepetYemeklerCevap.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		FA8AD0AB27F47D400004C13A /* foodsList-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0B127F47DC60004C13A /* tableview */,
+				FA8AD0B027F47D8F0004C13A /* view */,
+				FA8AD0AF27F47D8A0004C13A /* router */,
+				FA8AD0AE27F47D830004C13A /* presenter */,
+				FA8AD0AD27F47D7A0004C13A /* interactor */,
+				FA8AD0AC27F47D730004C13A /* protocols */,
+			);
+			path = "foodsList-module";
+			sourceTree = "<group>";
+		};
+		FA8AD0AC27F47D730004C13A /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0C127F481FA0004C13A /* FoodsListProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FA8AD0AD27F47D7A0004C13A /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0C327F485000004C13A /* FoodsListInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FA8AD0AE27F47D830004C13A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0C527F4860B0004C13A /* FoodsListPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FA8AD0AF27F47D8A0004C13A /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0C727F4866F0004C13A /* FoodsListRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FA8AD0B027F47D8F0004C13A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD09C27F46B6B0004C13A /* FoodsVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FA8AD0B127F47DC60004C13A /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0A227F46C660004C13A /* FoodsTableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		FA8AD0B427F47EFF0004C13A /* basket-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0BB27F47F6B0004C13A /* tableview */,
+				FA8AD0BA27F47F5B0004C13A /* view */,
+				FA8AD0B927F47F560004C13A /* router */,
+				FA8AD0B827F47F500004C13A /* presenter */,
+				FA8AD0B727F47F490004C13A /* interactor */,
+				FA8AD0B627F47F280004C13A /* protocols */,
+			);
+			path = "basket-module";
+			sourceTree = "<group>";
+		};
+		FA8AD0B527F47F150004C13A /* details-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0C027F47FB60004C13A /* view */,
+				FA8AD0BF27F47FB10004C13A /* router */,
+				FA8AD0BE27F47FA70004C13A /* presenter */,
+				FA8AD0BD27F47F9A0004C13A /* interactor */,
+				FA8AD0BC27F47F930004C13A /* protocols */,
+			);
+			path = "details-module";
+			sourceTree = "<group>";
+		};
+		FA8AD0B627F47F280004C13A /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA92538A27F63C16002CA92B /* BasketProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FA8AD0B727F47F490004C13A /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA92539627F64637002CA92B /* BasketInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FA8AD0B827F47F500004C13A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA92539827F6470C002CA92B /* BasketPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FA8AD0B927F47F560004C13A /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FA92539A27F6480A002CA92B /* BasketRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FA8AD0BA27F47F5B0004C13A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD09E27F46B830004C13A /* BasketVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FA8AD0BB27F47F6B0004C13A /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0A427F46C7A0004C13A /* BasketTableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		FA8AD0BC27F47F930004C13A /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FA8AD0BD27F47F9A0004C13A /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA92538327F60D4D002CA92B /* DetailsInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FA8AD0BE27F47FA70004C13A /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA92538527F60D5A002CA92B /* DetailsPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FA8AD0BF27F47FB10004C13A /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FA92538727F60D6B002CA92B /* DetailsRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		FA8AD0C027F47FB60004C13A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AD0A027F46B9B0004C13A /* DetailsVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA7B4D0B27F346480006F168 /* YemekSiparisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7B4D3627F3464C0006F168 /* Build configuration list for PBXNativeTarget "YemekSiparisApp" */;
+			buildPhases = (
+				FA7B4D0827F346480006F168 /* Sources */,
+				FA7B4D0927F346480006F168 /* Frameworks */,
+				FA7B4D0A27F346480006F168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YemekSiparisApp;
+			packageProductDependencies = (
+				FA8AD0CA27F490A80004C13A /* Alamofire */,
+				FA8AD0CD27F49A860004C13A /* Kingfisher */,
+				FA61347327F710EB00BD7420 /* FirebaseAuth */,
+				FA61347527F710EB00BD7420 /* FirebaseFirestore */,
+				FA61347727F710EB00BD7420 /* FirebaseStorage */,
+			);
+			productName = YemekSiparisApp;
+			productReference = FA7B4D0C27F346490006F168 /* YemekSiparisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA7B4D2127F3464C0006F168 /* YemekSiparisAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7B4D3927F3464C0006F168 /* Build configuration list for PBXNativeTarget "YemekSiparisAppTests" */;
+			buildPhases = (
+				FA7B4D1E27F3464C0006F168 /* Sources */,
+				FA7B4D1F27F3464C0006F168 /* Frameworks */,
+				FA7B4D2027F3464C0006F168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7B4D2427F3464C0006F168 /* PBXTargetDependency */,
+			);
+			name = YemekSiparisAppTests;
+			productName = YemekSiparisAppTests;
+			productReference = FA7B4D2227F3464C0006F168 /* YemekSiparisAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA7B4D2B27F3464C0006F168 /* YemekSiparisAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA7B4D3C27F3464C0006F168 /* Build configuration list for PBXNativeTarget "YemekSiparisAppUITests" */;
+			buildPhases = (
+				FA7B4D2827F3464C0006F168 /* Sources */,
+				FA7B4D2927F3464C0006F168 /* Frameworks */,
+				FA7B4D2A27F3464C0006F168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA7B4D2E27F3464C0006F168 /* PBXTargetDependency */,
+			);
+			name = YemekSiparisAppUITests;
+			productName = YemekSiparisAppUITests;
+			productReference = FA7B4D2C27F3464C0006F168 /* YemekSiparisAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA7B4D0427F346480006F168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FA7B4D0B27F346480006F168 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FA7B4D2127F3464C0006F168 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FA7B4D0B27F346480006F168;
+					};
+					FA7B4D2B27F3464C0006F168 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FA7B4D0B27F346480006F168;
+					};
+				};
+			};
+			buildConfigurationList = FA7B4D0727F346480006F168 /* Build configuration list for PBXProject "YemekSiparisApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA7B4D0327F346480006F168;
+			packageReferences = (
+				FA8AD0C927F490A80004C13A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FA8AD0CC27F49A850004C13A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FA61347227F710EB00BD7420 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FA7B4D0D27F346490006F168 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA7B4D0B27F346480006F168 /* YemekSiparisApp */,
+				FA7B4D2127F3464C0006F168 /* YemekSiparisAppTests */,
+				FA7B4D2B27F3464C0006F168 /* YemekSiparisAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA7B4D0A27F346480006F168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7B4D1C27F3464B0006F168 /* LaunchScreen.storyboard in Resources */,
+				FA61347127F70BF900BD7420 /* GoogleService-Info.plist in Resources */,
+				FA7B4D1927F3464B0006F168 /* Assets.xcassets in Resources */,
+				FA7B4D1727F346490006F168 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7B4D2027F3464C0006F168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7B4D2A27F3464C0006F168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA7B4D0827F346480006F168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8AD09F27F46B830004C13A /* BasketVC.swift in Sources */,
+				FA92539527F6454F002CA92B /* SepetYemeklerCevap.swift in Sources */,
+				FA61347C27F719E600BD7420 /* AuthenticationVC.swift in Sources */,
+				FA8AD0A327F46C660004C13A /* FoodsTableViewCell.swift in Sources */,
+				FA8AD0AA27F47AD10004C13A /* YemeklerCevap.swift in Sources */,
+				FA92538427F60D4D002CA92B /* DetailsInteractor.swift in Sources */,
+				FA92539B27F6480A002CA92B /* BasketRouter.swift in Sources */,
+				FA8AD0C227F481FA0004C13A /* FoodsListProtocols.swift in Sources */,
+				FA7B4D1027F346490006F168 /* AppDelegate.swift in Sources */,
+				FA8AD0C827F4866F0004C13A /* FoodsListRouter.swift in Sources */,
+				FA92538827F60D6B002CA92B /* DetailsRouter.swift in Sources */,
+				FA92538027F5CF19002CA92B /* DetailsProtocols.swift in Sources */,
+				FA92539927F6470C002CA92B /* BasketPresenter.swift in Sources */,
+				FA7B4D1227F346490006F168 /* SceneDelegate.swift in Sources */,
+				FA92538627F60D5A002CA92B /* DetailsPresenter.swift in Sources */,
+				FA8AD0C627F4860B0004C13A /* FoodsListPresenter.swift in Sources */,
+				FA92539327F63DE7002CA92B /* SepetYemekler.swift in Sources */,
+				FA8AD0C427F485000004C13A /* FoodsListInteractor.swift in Sources */,
+				FA8AD09D27F46B6B0004C13A /* FoodsVC.swift in Sources */,
+				FA92538B27F63C16002CA92B /* BasketProtocols.swift in Sources */,
+				FA8AD0A127F46B9B0004C13A /* DetailsVC.swift in Sources */,
+				FA8AD0A527F46C7A0004C13A /* BasketTableViewCell.swift in Sources */,
+				FA8AD0A727F4798F0004C13A /* Yemekler.swift in Sources */,
+				FA92539727F64637002CA92B /* BasketInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7B4D1E27F3464C0006F168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7B4D2727F3464C0006F168 /* YemekSiparisAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA7B4D2827F3464C0006F168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7B4D3327F3464C0006F168 /* YemekSiparisAppUITestsLaunchTests.swift in Sources */,
+				FA7B4D3127F3464C0006F168 /* YemekSiparisAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA7B4D2427F3464C0006F168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7B4D0B27F346480006F168 /* YemekSiparisApp */;
+			targetProxy = FA7B4D2327F3464C0006F168 /* PBXContainerItemProxy */;
+		};
+		FA7B4D2E27F3464C0006F168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA7B4D0B27F346480006F168 /* YemekSiparisApp */;
+			targetProxy = FA7B4D2D27F3464C0006F168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA7B4D1527F346490006F168 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7B4D1627F346490006F168 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA7B4D1A27F3464B0006F168 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA7B4D1B27F3464B0006F168 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA7B4D3427F3464C0006F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA7B4D3527F3464C0006F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA7B4D3727F3464C0006F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9372SCBN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YemekSiparisApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevgitoprak.YemekSiparisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA7B4D3827F3464C0006F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9372SCBN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YemekSiparisApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevgitoprak.YemekSiparisApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA7B4D3A27F3464C0006F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9372SCBN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevgitoprak.YemekSiparisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YemekSiparisApp.app/YemekSiparisApp";
+			};
+			name = Debug;
+		};
+		FA7B4D3B27F3464C0006F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9372SCBN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevgitoprak.YemekSiparisAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YemekSiparisApp.app/YemekSiparisApp";
+			};
+			name = Release;
+		};
+		FA7B4D3D27F3464C0006F168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9372SCBN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevgitoprak.YemekSiparisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YemekSiparisApp;
+			};
+			name = Debug;
+		};
+		FA7B4D3E27F3464C0006F168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X9372SCBN9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevgitoprak.YemekSiparisAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YemekSiparisApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA7B4D0727F346480006F168 /* Build configuration list for PBXProject "YemekSiparisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7B4D3427F3464C0006F168 /* Debug */,
+				FA7B4D3527F3464C0006F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7B4D3627F3464C0006F168 /* Build configuration list for PBXNativeTarget "YemekSiparisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7B4D3727F3464C0006F168 /* Debug */,
+				FA7B4D3827F3464C0006F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7B4D3927F3464C0006F168 /* Build configuration list for PBXNativeTarget "YemekSiparisAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7B4D3A27F3464C0006F168 /* Debug */,
+				FA7B4D3B27F3464C0006F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7B4D3C27F3464C0006F168 /* Build configuration list for PBXNativeTarget "YemekSiparisAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA7B4D3D27F3464C0006F168 /* Debug */,
+				FA7B4D3E27F3464C0006F168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA61347227F710EB00BD7420 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		FA8AD0C927F490A80004C13A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FA8AD0CC27F49A850004C13A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA61347327F710EB00BD7420 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA61347227F710EB00BD7420 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FA61347527F710EB00BD7420 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA61347227F710EB00BD7420 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FA61347727F710EB00BD7420 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA61347227F710EB00BD7420 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FA8AD0CA27F490A80004C13A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8AD0C927F490A80004C13A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FA8AD0CD27F49A860004C13A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8AD0CC27F49A850004C13A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA7B4D0427F346480006F168 /* Project object */;
+}

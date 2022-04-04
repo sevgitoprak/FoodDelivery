@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>807070336612-u7sjoa3s56on8a0n7aepnbss5kvnd7q2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.807070336612-u7sjoa3s56on8a0n7aepnbss5kvnd7q2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAW-g4b7e8Gz6DRBg8kp3E_964Dxq-c1SU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>807070336612</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sevgitoprak.YemekSiparisApp</string>
+	<key>PROJECT_ID</key>
+	<string>yemeksiparisapp-d8dc2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yemeksiparisapp-d8dc2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:807070336612:ios:4d4aeee60e06cf088b4171</string>
+</dict>
+</plist>
