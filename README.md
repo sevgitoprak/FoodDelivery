@@ -17,7 +17,5 @@
 - Firebase Authentication
 - Kingfisher(to upload internet-based images)
 
+![yummies](https://user-images.githubusercontent.com/93860490/174766003-90e9c1b6-01e2-4b50-990c-43f11bb9a80c.gif)
 
-
-
-![yummies](https://user-images.githubusercontent.com/93860490/174765704-eb350375-4e02-452e-8ea4-4c44ba515852.gif)
